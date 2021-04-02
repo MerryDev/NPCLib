@@ -1,8 +1,9 @@
 NPCLib.iml
 .idea
 Classdiagram.uml
-/target
 
+/out
+/target
 /Core/target
 /V_1_8_R3/target
 /V_1_9_R2/target
