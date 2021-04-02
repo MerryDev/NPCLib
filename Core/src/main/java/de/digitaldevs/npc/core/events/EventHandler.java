@@ -100,14 +100,14 @@ public class EventHandler<E> {
      */
     public EventHandler<E> invoke(@NotNull E invokable) {
         if (invokable instanceof SkinData) this.skinData = (SkinData) invokable;
-        if (invokable instanceof Location) this.location = (Location) invokable;
-        if (invokable instanceof NPCAnimation) this.animation = (NPCAnimation) invokable;
-        if (invokable instanceof NPCStatus) this.status = (NPCStatus) invokable;
-        if (invokable instanceof NPCEquipmentSlot) this.slot = (NPCEquipmentSlot) invokable;
-        if (invokable instanceof Player) this.player = (Player) invokable;
-        if (invokable instanceof ItemStack) this.item = (ItemStack) invokable;
-        if (invokable instanceof Float[]) this.view = (Float[]) invokable;
-        if (invokable instanceof Boolean) this.state = (Boolean) invokable;
+        else if (invokable instanceof Location) this.location = (Location) invokable;
+        else if (invokable instanceof NPCAnimation) this.animation = (NPCAnimation) invokable;
+        else if (invokable instanceof NPCStatus) this.status = (NPCStatus) invokable;
+        else if (invokable instanceof NPCEquipmentSlot) this.slot = (NPCEquipmentSlot) invokable;
+        else if (invokable instanceof Player) this.player = (Player) invokable;
+        else if (invokable instanceof ItemStack) this.item = (ItemStack) invokable;
+        else if (invokable instanceof Float[]) this.view = (Float[]) invokable;
+        else if (invokable instanceof Boolean) this.state = (Boolean) invokable;
         else
             throw new InvalidParameterException("The invokable must be type of SkinData, Location, NPCAnimation, NPCStatus, NPCEquipmentSlot, Player, ItemStack, Float[] or Boolean!");
         return this;
