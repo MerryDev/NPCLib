@@ -34,7 +34,7 @@ public class ClassAccessor {
      * @see #getClass(String)
      */
     public static Class<?> getNMSClass(String versionPacketName, String clazzName) {
-        return getClass(versionPacketName + "." + clazzName);
+        return getClass("net.minecraft.server." + versionPacketName + "." + clazzName);
     }
 
 }
